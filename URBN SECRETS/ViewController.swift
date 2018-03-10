@@ -20,22 +20,22 @@ class ViewController: UIViewController, ESTTriggerManagerDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         // 3. Set the trigger manager's delegate
         self.triggerManager.delegate = self
-//        let rule2 = ESTOrientationRule.orientationEquals(
-//            .horizontalUpsideDown, for: .bag)
+        let rule2 = ESTOrientationRule.orientationEquals(
+            .horizontalUpsideDown, for: .bag)
 //        changed 20 ft away
         let rule1 = ESTProximityRule.inRangeOf(.car)
-        let rule2 = ESTProximityRule.inRangeOf(.bag)
+//        let rule2 = ESTProximityRule.outsideRange(of: .bag)
 
 //        let rule2 = ESTMotionRule.motionStateEquals(
 //            true, forNearableIdentifier: "ee84b8102024b5b3")
 
         
-        let triggerCar = ESTTrigger(rules: [rule1], identifier: "triggerCar")
-        let triggerBag = ESTTrigger(rules: [rule2], identifier: "triggerBag")
+        let triggerCar = ESTTrigger(rules: [rule1, rule2], identifier: "triggerCar")
+//        let triggerBag = ESTTrigger(rules: [rule2], identifier: "triggerBag")
 
         
         self.triggerManager.startMonitoring(for: triggerCar)
-        self.triggerManager.startMonitoring(for: triggerBag)
+//        self.triggerManager.startMonitoring(for: triggerBag)
 
     }
 
@@ -48,13 +48,13 @@ class ViewController: UIViewController, ESTTriggerManagerDelegate {
                         triggerChangedState trigger: ESTTrigger) {
         if (trigger.identifier == "triggerCar" && trigger.state == true) {
             self.view.backgroundColor = self.colors[0]
-            let myAlert = UIAlertController(title: "car found", message: "congrats", preferredStyle: .alert)
-            self.present(myAlert, animated: true)
-        }
-       if (trigger.identifier == "triggerBag" && trigger.state == true) {
+//            let myAlert = UIAlertController(title: "car found", message: "congrats", preferredStyle: .alert)
+//            self.present(myAlert, animated: true)
+        
+        } else {
                 self.view.backgroundColor = self.colors[1]
-                let myAlert = UIAlertController(title: "bag found", message: "congrats", preferredStyle: .alert)
-                self.present(myAlert, animated: true)
+//                let myAlert = UIAlertController(title: "bag found", message: "congrats", preferredStyle: .alert)
+//                self.present(myAlert, animated: true)
     }
 }
 }
