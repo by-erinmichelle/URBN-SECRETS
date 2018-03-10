@@ -13,7 +13,58 @@
 		F80795542054543400558BC7 /* URBN_SECRETS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F80795522054543400558BC7 /* URBN_SECRETS.xcdatamodeld */; };
 		F80795562054543400558BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80795552054543400558BC7 /* Assets.xcassets */; };
 		F80795592054543400558BC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80795572054543400558BC7 /* LaunchScreen.storyboard */; };
+		F80795662054549900558BC7 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80795642054549900558BC7 /* Interface.storyboard */; };
+		F80795682054549900558BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80795672054549900558BC7 /* Assets.xcassets */; };
+		F807956F2054549900558BC7 /* URBN SECRETS WATCH Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F807956E2054549900558BC7 /* URBN SECRETS WATCH Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F80795742054549900558BC7 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80795732054549900558BC7 /* InterfaceController.swift */; };
+		F80795762054549900558BC7 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80795752054549900558BC7 /* ExtensionDelegate.swift */; };
+		F80795782054549900558BC7 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80795772054549900558BC7 /* NotificationController.swift */; };
+		F807957A2054549900558BC7 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80795792054549900558BC7 /* ComplicationController.swift */; };
+		F807957C2054549900558BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F807957B2054549900558BC7 /* Assets.xcassets */; };
+		F80795812054549900558BC7 /* URBN SECRETS WATCH.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F80795622054549900558BC7 /* URBN SECRETS WATCH.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F80795702054549900558BC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F80795402054543400558BC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F807956D2054549900558BC7;
+			remoteInfo = "URBN SECRETS WATCH Extension";
+		};
+		F807957F2054549900558BC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F80795402054543400558BC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F80795612054549900558BC7;
+			remoteInfo = "URBN SECRETS WATCH";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F80795852054549900558BC7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F807956F2054549900558BC7 /* URBN SECRETS WATCH Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80795892054549900558BC7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F80795812054549900558BC7 /* URBN SECRETS WATCH.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F80795482054543400558BC7 /* URBN SECRETS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URBN SECRETS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +75,29 @@
 		F80795552054543400558BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F80795582054543400558BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F807955A2054543400558BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F80795622054549900558BC7 /* URBN SECRETS WATCH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URBN SECRETS WATCH.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80795652054549900558BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F80795672054549900558BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F80795692054549900558BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F807956E2054549900558BC7 /* URBN SECRETS WATCH Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "URBN SECRETS WATCH Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80795732054549900558BC7 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F80795752054549900558BC7 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F80795772054549900558BC7 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F80795792054549900558BC7 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		F807957B2054549900558BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F807957D2054549900558BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F807957E2054549900558BC7 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F80795452054543400558BC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F807956B2054549900558BC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				F807954A2054543400558BC7 /* URBN SECRETS */,
+				F80795632054549900558BC7 /* URBN SECRETS WATCH */,
+				F80795722054549900558BC7 /* URBN SECRETS WATCH Extension */,
 				F80795492054543400558BC7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				F80795482054543400558BC7 /* URBN SECRETS.app */,
+				F80795622054549900558BC7 /* URBN SECRETS WATCH.app */,
+				F807956E2054549900558BC7 /* URBN SECRETS WATCH Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +141,30 @@
 			path = "URBN SECRETS";
 			sourceTree = "<group>";
 		};
+		F80795632054549900558BC7 /* URBN SECRETS WATCH */ = {
+			isa = PBXGroup;
+			children = (
+				F80795642054549900558BC7 /* Interface.storyboard */,
+				F80795672054549900558BC7 /* Assets.xcassets */,
+				F80795692054549900558BC7 /* Info.plist */,
+			);
+			path = "URBN SECRETS WATCH";
+			sourceTree = "<group>";
+		};
+		F80795722054549900558BC7 /* URBN SECRETS WATCH Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F80795732054549900558BC7 /* InterfaceController.swift */,
+				F80795752054549900558BC7 /* ExtensionDelegate.swift */,
+				F80795772054549900558BC7 /* NotificationController.swift */,
+				F80795792054549900558BC7 /* ComplicationController.swift */,
+				F807957B2054549900558BC7 /* Assets.xcassets */,
+				F807957D2054549900558BC7 /* Info.plist */,
+				F807957E2054549900558BC7 /* PushNotificationPayload.apns */,
+			);
+			path = "URBN SECRETS WATCH Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +175,51 @@
 				F80795442054543400558BC7 /* Sources */,
 				F80795452054543400558BC7 /* Frameworks */,
 				F80795462054543400558BC7 /* Resources */,
+				F80795892054549900558BC7 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F80795802054549900558BC7 /* PBXTargetDependency */,
 			);
 			name = "URBN SECRETS";
 			productName = "URBN SECRETS";
 			productReference = F80795482054543400558BC7 /* URBN SECRETS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F80795612054549900558BC7 /* URBN SECRETS WATCH */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80795862054549900558BC7 /* Build configuration list for PBXNativeTarget "URBN SECRETS WATCH" */;
+			buildPhases = (
+				F80795602054549900558BC7 /* Resources */,
+				F80795852054549900558BC7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F80795712054549900558BC7 /* PBXTargetDependency */,
+			);
+			name = "URBN SECRETS WATCH";
+			productName = "URBN SECRETS WATCH";
+			productReference = F80795622054549900558BC7 /* URBN SECRETS WATCH.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F807956D2054549900558BC7 /* URBN SECRETS WATCH Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80795822054549900558BC7 /* Build configuration list for PBXNativeTarget "URBN SECRETS WATCH Extension" */;
+			buildPhases = (
+				F807956A2054549900558BC7 /* Sources */,
+				F807956B2054549900558BC7 /* Frameworks */,
+				F807956C2054549900558BC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "URBN SECRETS WATCH Extension";
+			productName = "URBN SECRETS WATCH Extension";
+			productReference = F807956E2054549900558BC7 /* URBN SECRETS WATCH Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +232,14 @@
 				ORGANIZATIONNAME = "Erin Wiegman";
 				TargetAttributes = {
 					F80795472054543400558BC7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F80795612054549900558BC7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					F807956D2054549900558BC7 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -117,6 +259,8 @@
 			projectRoot = "";
 			targets = (
 				F80795472054543400558BC7 /* URBN SECRETS */,
+				F80795612054549900558BC7 /* URBN SECRETS WATCH */,
+				F807956D2054549900558BC7 /* URBN SECRETS WATCH Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +273,23 @@
 				F80795592054543400558BC7 /* LaunchScreen.storyboard in Resources */,
 				F80795562054543400558BC7 /* Assets.xcassets in Resources */,
 				F80795512054543400558BC7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80795602054549900558BC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80795682054549900558BC7 /* Assets.xcassets in Resources */,
+				F80795662054549900558BC7 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F807956C2054549900558BC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F807957C2054549900558BC7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +306,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F807956A2054549900558BC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80795782054549900558BC7 /* NotificationController.swift in Sources */,
+				F807957A2054549900558BC7 /* ComplicationController.swift in Sources */,
+				F80795762054549900558BC7 /* ExtensionDelegate.swift in Sources */,
+				F80795742054549900558BC7 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F80795712054549900558BC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F807956D2054549900558BC7 /* URBN SECRETS WATCH Extension */;
+			targetProxy = F80795702054549900558BC7 /* PBXContainerItemProxy */;
+		};
+		F80795802054549900558BC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F80795612054549900558BC7 /* URBN SECRETS WATCH */;
+			targetProxy = F807957F2054549900558BC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F807954F2054543400558BC7 /* Main.storyboard */ = {
@@ -162,6 +347,14 @@
 				F80795582054543400558BC7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F80795642054549900558BC7 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F80795652054549900558BC7 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -304,6 +497,80 @@
 			};
 			name = Release;
 		};
+		F80795832054549900558BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F52T85UMC;
+				INFOPLIST_FILE = "URBN SECRETS WATCH Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.byerinmichelle.URBN-SECRETS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		F80795842054549900558BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F52T85UMC;
+				INFOPLIST_FILE = "URBN SECRETS WATCH Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.byerinmichelle.URBN-SECRETS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		F80795872054549900558BC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F52T85UMC;
+				IBSC_MODULE = URBN_SECRETS_WATCH_Extension;
+				INFOPLIST_FILE = "URBN SECRETS WATCH/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.byerinmichelle.URBN-SECRETS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		F80795882054549900558BC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5F52T85UMC;
+				IBSC_MODULE = URBN_SECRETS_WATCH_Extension;
+				INFOPLIST_FILE = "URBN SECRETS WATCH/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.byerinmichelle.URBN-SECRETS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -321,6 +588,24 @@
 			buildConfigurations = (
 				F807955E2054543400558BC7 /* Debug */,
 				F807955F2054543400558BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F80795822054549900558BC7 /* Build configuration list for PBXNativeTarget "URBN SECRETS WATCH Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80795832054549900558BC7 /* Debug */,
+				F80795842054549900558BC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F80795862054549900558BC7 /* Build configuration list for PBXNativeTarget "URBN SECRETS WATCH" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80795872054549900558BC7 /* Debug */,
+				F80795882054549900558BC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
