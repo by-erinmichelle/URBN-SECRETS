@@ -12,6 +12,7 @@ import UserNotifications
 
 
 class NotificationController: WKUserNotificationInterfaceController {
+    @IBOutlet var titleLabel: WKInterfaceLabel!
     override init() {
         // Initialize variables here.
         super.init()
@@ -38,8 +39,8 @@ class NotificationController: WKUserNotificationInterfaceController {
         // After populating your dynamic notification interface call the completion block.
         let content = notification.request.content
         titleLabel.setText(content.title)
-        subtitleLabel.setText(content.subtitle)
-        bodyLabel.setText(content.body)
+//        subtitleLabel.setText(content.subtitle)
+//        bodyLabel.setText(content.body)
         
         
         

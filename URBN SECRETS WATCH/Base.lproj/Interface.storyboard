@@ -7,6 +7,7 @@
         <deployment identifier="watchOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -21,19 +22,12 @@
                         </group>
                         <group width="1" alignment="left" id="Gv2-bO-2xD">
                             <items>
-                                <button width="1" alignment="left" title="action Button" id="a0U-7Z-8X0">
-                                    <connections>
-                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="ihS-Bi-dnk"/>
-                                    </connections>
-                                </button>
+                                <button width="1" alignment="left" title="action Button" id="a0U-7Z-8X0"/>
                             </items>
                         </group>
                     </items>
                     <connections>
-                        <outlet property="actionButton" destination="a0U-7Z-8X0" id="c7S-GZ-SfB"/>
                         <outlet property="actionGroup" destination="Gv2-bO-2xD" id="SDR-dy-6Wz"/>
-                        <outlet property="statusGroup" destination="NGF-TT-TPm" id="dGk-5l-sCV"/>
-                        <outlet property="statusLabel" destination="Rfb-0g-wEn" id="7sc-rX-zum"/>
                     </connections>
                 </controller>
             </objects>
@@ -44,9 +38,13 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Congrats!" id="IdU-wH-bcW"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf">
+                        <color key="titleColor" name="white"/>
+                        <color key="sashColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </notificationCategory>
+                    <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
                         <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
@@ -58,9 +56,23 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="URBN_SECRETS_WATCH" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="URBN_SECRETS_WATCH" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="&lt;title&gt;" id="kWZ-Yi-XBE">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="titleLabel" destination="kWZ-Yi-XBE" id="BEm-V9-Dbw"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="white">
+            <color red="0.79600000380000002" green="0.851000011" blue="0.86699998379999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

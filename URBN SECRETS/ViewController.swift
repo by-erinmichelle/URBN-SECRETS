@@ -113,10 +113,10 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     // MARK: -  Categories and  Notification actions
     func setCategories(){
         // Declare Actions ---------------------------------------
-        let snoozeAction = UNNotificationAction(identifier: "snooze.action", title: "Snooze", options: [])
+//        let snoozeAction = UNNotificationAction(identifier: "snooze.action", title: "Snooze", options: [])
         let nextAction = UNNotificationAction(identifier: "next.action", title: "Next", options: [])
         // Declare and set the categories ------------------------
-        let pizzaCategory = UNNotificationCategory(identifier: "pizza.category", actions: [snoozeAction,nextAction], intentIdentifiers: [], options: [])
+        let pizzaCategory = UNNotificationCategory(identifier: "pizza.category", actions: [nextAction], intentIdentifiers: [], options: [])
         UNUserNotificationCenter.current().setNotificationCategories([pizzaCategory])
     }
     
@@ -146,7 +146,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         // Dispose of any resources that can be recreated.
 }
 
-
+}
 
 ////watch connectivity---------------------------------------------
 ////  ViewController.swift

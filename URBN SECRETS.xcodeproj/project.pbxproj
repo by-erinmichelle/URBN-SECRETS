@@ -25,6 +25,7 @@
 		F807958B2054592600558BC7 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F807958A2054592600558BC7 /* EstimoteSDK.framework */; };
 		F807958E205558E400558BC7 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807958D205558E400558BC7 /* WatchConnectivityManager.swift */; };
 		F807958F205558E500558BC7 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807958D205558E400558BC7 /* WatchConnectivityManager.swift */; };
+		F80795A420559B5A00558BC7 /* pizzaImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F80795A320559B5A00558BC7 /* pizzaImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		F807958A2054592600558BC7 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
 		F807958C20545A1900558BC7 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		F807958D205558E400558BC7 /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
+		F80795A320559B5A00558BC7 /* pizzaImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizzaImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		F807954A2054543400558BC7 /* URBN SECRETS */ = {
 			isa = PBXGroup;
 			children = (
+				F80795A320559B5A00558BC7 /* pizzaImage.png */,
 				F807954B2054543400558BC7 /* AppDelegate.swift */,
 				F807954D2054543400558BC7 /* ViewController.swift */,
 				F807954F2054543400558BC7 /* Main.storyboard */,
@@ -246,7 +249,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -258,7 +261,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -267,7 +270,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -298,6 +301,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F80795A420559B5A00558BC7 /* pizzaImage.png in Resources */,
 				F80795592054543400558BC7 /* LaunchScreen.storyboard in Resources */,
 				F80795562054543400558BC7 /* Assets.xcassets in Resources */,
 				F80795512054543400558BC7 /* Main.storyboard in Resources */,
@@ -501,7 +505,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "URBN SECRETS/URBN SECRETS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5F52T85UMC;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -522,7 +525,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "URBN SECRETS/URBN SECRETS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5F52T85UMC;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -543,7 +545,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "URBN SECRETS WATCH Extension/URBN SECRETS WATCH Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5F52T85UMC;
 				INFOPLIST_FILE = "URBN SECRETS WATCH Extension/Info.plist";
@@ -562,7 +563,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "URBN SECRETS WATCH Extension/URBN SECRETS WATCH Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5F52T85UMC;
 				INFOPLIST_FILE = "URBN SECRETS WATCH Extension/Info.plist";
@@ -582,7 +582,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "URBN SECRETS WATCH/URBN SECRETS WATCH.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5F52T85UMC;
 				IBSC_MODULE = URBN_SECRETS_WATCH_Extension;
@@ -602,7 +601,6 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "URBN SECRETS WATCH/URBN SECRETS WATCH.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5F52T85UMC;
 				IBSC_MODULE = URBN_SECRETS_WATCH_Extension;

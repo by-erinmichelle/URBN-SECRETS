@@ -12,10 +12,10 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     
-    @IBAction func addDessertButton() {
-        DessertNotification.addRequest()
-        
-    }
+//    @IBAction func addDessertButton() {
+//        DessertNotification.addRequest()
+//        
+//    }
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         

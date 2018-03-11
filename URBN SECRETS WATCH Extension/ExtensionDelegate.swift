@@ -19,7 +19,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterD
         UNUserNotificationCenter.current().requestAuthorization(options: [.sound,.alert]) { (granted, error) in
             self.isGrantedAccess = granted
             if granted == false {
-                print("Launch Notification Error: \(error?.localizedDescription)")
+                print("Launch Notification Error: \(String(describing: error?.localizedDescription))")
             }
         }
     }
@@ -40,19 +40,19 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterD
             switch task {
             case let backgroundTask as WKApplicationRefreshBackgroundTask:
                 // Be sure to complete the background task once you’re done.
-                backgroundTask.setTaskCompleted()
+                backgroundTask.setTaskCompletedWithSnapshot(true)
             case let snapshotTask as WKSnapshotRefreshBackgroundTask:
                 // Snapshot tasks have a unique completion call, make sure to set your expiration date
                 snapshotTask.setTaskCompleted(restoredDefaultState: true, estimatedSnapshotExpiration: Date.distantFuture, userInfo: nil)
             case let connectivityTask as WKWatchConnectivityRefreshBackgroundTask:
                 // Be sure to complete the connectivity task once you’re done.
-                connectivityTask.setTaskCompleted()
+                connectivityTask.setTaskCompletedWithSnapshot(true)
             case let urlSessionTask as WKURLSessionRefreshBackgroundTask:
                 // Be sure to complete the URL session task once you’re done.
-                urlSessionTask.setTaskCompleted()
+                urlSessionTask.setTaskCompletedWithSnapshot(true)
             default:
                 // make sure to complete unhandled task types
-                task.setTaskCompleted()
+                task.setTaskCompletedWithSnapshot(true)
             }
         }
     }
