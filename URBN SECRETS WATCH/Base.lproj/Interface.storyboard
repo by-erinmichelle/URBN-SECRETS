@@ -14,8 +14,27 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="URBN_SECRETS_WATCH" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Label" id="Rfb-0g-wEn"/>
+                        <group width="1" alignment="left" id="NGF-TT-TPm">
+                            <items>
+                                <label alignment="left" text="status Label" id="Rfb-0g-wEn"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="Gv2-bO-2xD">
+                            <items>
+                                <button width="1" alignment="left" title="action Button" id="a0U-7Z-8X0">
+                                    <connections>
+                                        <action selector="buttonAction" destination="AgC-eL-Hgc" id="ihS-Bi-dnk"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
+                    <connections>
+                        <outlet property="actionButton" destination="a0U-7Z-8X0" id="c7S-GZ-SfB"/>
+                        <outlet property="actionGroup" destination="Gv2-bO-2xD" id="SDR-dy-6Wz"/>
+                        <outlet property="statusGroup" destination="NGF-TT-TPm" id="dGk-5l-sCV"/>
+                        <outlet property="statusLabel" destination="Rfb-0g-wEn" id="7sc-rX-zum"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
