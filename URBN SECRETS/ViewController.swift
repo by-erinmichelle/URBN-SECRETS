@@ -7,9 +7,36 @@
 //
 
 import UIKit
+import WatchConnectivity
+
 
 // 1. Add the ESTTriggerManagerDelegate protocol
-class ViewController: UIViewController, ESTTriggerManagerDelegate {
+class ViewController: UIViewController, ESTTriggerManagerDelegate, WCSessionDelegate {
+  
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        //Swift
+        if (WCSession.default.isReachable) {
+            // Do something
+        }
+    }
+    
+//    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+//        //Swift
+//        do {
+//            let applicationDict = // Create a dict of application data
+//                try WCSession.defaultSession().updateApplicationContext(applicationDict)
+//        } catch {
+//            // Handle errors here
+//        }
+//    }
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        <#code#>
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        <#code#>
+    }
+    
     // 2. Add the trigger manager
     let triggerManager = ESTTriggerManager()
 
