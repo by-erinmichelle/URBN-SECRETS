@@ -33,7 +33,13 @@
                             <color key="textColor" name="white"/>
                             <fontDescription key="font" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="14"/>
                         </label>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Button" id="St8-8a-iAy"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Start Exploring" backgroundImage="button-watch" id="St8-8a-iAy">
+                            <color key="titleColor" name="background"/>
+                            <fontDescription key="font" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
+                            <connections>
+                                <segue destination="rIa-nZ-L98" kind="push" identifier="detailpage" id="RzI-QB-YgX"/>
+                            </connections>
+                        </button>
                     </items>
                     <color key="backgroundColor" name="background"/>
                     <edgeInsets key="margins" left="1" right="1" top="4" bottom="0.0"/>
@@ -47,7 +53,7 @@
         <!--detailpage-->
         <scene sceneID="Jy3-cN-V8U">
             <objects>
-                <controller identifier="detailpage" id="rIa-nZ-L98" customClass="detailInterfaceController" customModule="URBN_SECRETS_WATCH_Extension">
+                <controller identifier="detailpage" id="rIa-nZ-L98">
                     <items>
                         <button width="1" height="25" alignment="center" title="HYBRID LAB" id="nP9-u1-CM0">
                             <color key="titleColor" name="background"/>
@@ -115,6 +121,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="background">
+            <color red="0.15700000524520874" green="0.15700000524520874" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="background">
             <color red="0.15700000524520874" green="0.15700000524520874" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

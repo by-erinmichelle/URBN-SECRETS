@@ -66,8 +66,11 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
     //MARK: - Notification Delegates
     // Once you adopt the protocol, add this method for in-app notification presentation.
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
         completionHandler([.alert,.badge,.sound])
     }
+    
+    
     // Method to run code for actions
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
@@ -96,11 +99,11 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
         completionHandler() // <--- Don't forget calling the completion Handler!
     }
     
+    
     // MARK: -  Categories and  Notification actions
     func setCategories(){
         // Declare Actions ---------------------------------------
-//        let snoozeAction = UNNotificationAction(identifier: "snooze.action", title: "Snooze", options: [])
-        let nextAction = UNNotificationAction(identifier: "next.action", title: "Details", options: [])
+        let nextAction = UNNotificationAction(identifier: "next.action", title: "Details", options: [.foreground])
         // Declare and set the categories ------------------------
         let pizzaCategory = UNNotificationCategory(identifier: "pizza.category", actions: [nextAction], intentIdentifiers: [], options: [])
         UNUserNotificationCenter.current().setNotificationCategories([pizzaCategory])
