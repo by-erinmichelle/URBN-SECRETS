@@ -10,8 +10,6 @@ import UserNotifications
 class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterDelegate {
     var isGrantedAccess = false
 
-    
-    
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
         setCategories()
@@ -81,7 +79,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterD
     func setCategories(){
         // Declare Actions ---------------------------------------
 
-        let nextAction = UNNotificationAction(identifier: "next.action", title: "Next", options: [])
+        let nextAction = UNNotificationAction(identifier: "next.action", title: "Details", options: [.foreground])
 
         // Declare and set the categories ------------------------
         let pizzaCategory = UNNotificationCategory(identifier: "pizza.category", actions: [nextAction], intentIdentifiers: [], options: [])

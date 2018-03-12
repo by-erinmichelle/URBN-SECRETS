@@ -37,7 +37,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
             let content = UNMutableNotificationContent()
             
             content.title = "Congrats!"
-//            content.body = "You found the Hybrid Lab"
+            content.body = "You found the Hybrid Lab"
             content.sound = UNNotificationSound.default()
             content.attachments = pizzaImage()
             
@@ -71,7 +71,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
     }
     
     
-    // Method to run code for actions
+    //************ Method to run code for actions ************
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
         //Identify the action and request -------------------------------------
@@ -80,6 +80,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
     
         
         if action == "next.action"{
+            print("details")
             // Add a new request to the notification center with different content
             // the subtitle will indicate the current step.
 //            let content = request.content.mutableCopy() as! UNMutableNotificationContent
@@ -144,7 +145,6 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
         if (trigger.identifier == "triggerCar" && trigger.state == true) {
             timedNotification()
             print("hey now")
-//            WKInterfaceDevice.current().play(.success)
         } else {
             print("aw man")
         }
