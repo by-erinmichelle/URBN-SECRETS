@@ -47,5 +47,9 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Enable Location Services to detect how close you are to the nearest hidden location</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>franklinGothic.ttf</string>
+	</array>
 </dict>
 </plist>

@@ -10,7 +10,12 @@ import UIKit
 import UserNotifications
 
 class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTriggerManagerDelegate {
+    
+    
     var isGrantedAccess = false   //flag if User granted access
+    
+    @IBOutlet weak var label: UILabel!
+    let customFont = UIFont(name: "franklinGothic", size: 18.0)
     
     // Image Attachment -----------------------------------------
     func pizzaImage()->[UNNotificationAttachment]{

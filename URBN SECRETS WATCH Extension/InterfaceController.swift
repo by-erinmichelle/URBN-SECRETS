@@ -12,14 +12,31 @@ import UserNotifications
 
 class InterfaceController: WKInterfaceController {
     
-//    @IBAction func addDessertButton() {
-//        DessertNotification.addRequest()
-//        
-//    }
+    // Configure an attributed string with custom font information
     
-
+//    let franklinGothicFont = UIFont(name: "franklinGothic", size: 12.0)!
+//    var fontAttrs = [NSFontAttributeName : franklinGothicFont]
+//    var attrString = NSAttributedString(string: "My Text", attributes: fontAttrs)
+//    
+//    // Set the text on the label object
+//    self.label.setAttributedText(attrString)
+    
+    @IBOutlet var labelObject: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        if let customFont = UIFont(name:
+            "franklinGothic", size: 16.0) {
+            let fontAttributes = [NSAttributedStringKey.font : customFont]
+            
+            let attributedText = NSAttributedString(string: "Apple Watch",
+                                                    attributes: fontAttributes)
+            
+            labelObject.setAttributedText(attributedText)
+        } else {
+            print("Font not found")
+        }
+        
         WKInterfaceDevice.current().play(.click)
 
         // Configure interface objects here.

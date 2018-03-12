@@ -31,7 +31,7 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Franklin Gothic Medium Cond</string>
+		<string>franklinGothic.ttf</string>
 	</array>
 </dict>
 </plist>

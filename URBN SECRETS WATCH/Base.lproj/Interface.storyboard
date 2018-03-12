@@ -10,10 +10,8 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="AvenirNext.ttc">
-            <string>AvenirNext-Bold</string>
-            <string>AvenirNext-DemiBold</string>
-            <string>AvenirNext-Regular</string>
+        <array key="franklinGothic.ttf">
+            <string>FranklinGothic-MediumCond</string>
         </array>
     </customFonts>
     <scenes>
@@ -22,47 +20,45 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="URBN_SECRETS_WATCH" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Start Exploring" backgroundImage="button-watch" id="BCv-L7-gn5">
-                            <color key="titleColor" name="background"/>
-                            <color key="backgroundColor" name="blue-accent"/>
-                            <fontDescription key="font" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
-                            <connections>
-                                <segue destination="rIa-nZ-L98" kind="push" id="19M-Fb-YEy"/>
-                            </connections>
-                        </button>
                         <group width="1" alignment="left" id="mgB-k7-nO2">
                             <items>
                                 <imageView width="51" height="38" alignment="left" image="appicon-1" contentMode="scaleAspectFit" id="dXC-kT-eaU"/>
                                 <label width="93" height="1" alignment="left" text="URBN SECRETS" textAlignment="center" baselineAdjustment="alignCenters" id="Gmt-Pw-Mxy">
                                     <color key="textColor" name="white"/>
-                                    <fontDescription key="font" name="AvenirNext-Bold" family="Avenir Next" pointSize="12"/>
+                                    <fontDescription key="font" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="16"/>
                                 </label>
                             </items>
                         </group>
-                        <label width="136" height="103" alignment="center" verticalAlignment="center" text="Welcome! With URBN SECRETS you can find hidden locations around Drexel's URBN Center and learn cool facts." textAlignment="left" numberOfLines="10" id="1rX-mZ-h6S">
+                        <label width="136" height="82" alignment="center" verticalAlignment="center" text="Welcome! With URBN SECRETS you can find hidden locations around Drexel's URBN Center and learn cool facts." textAlignment="left" numberOfLines="10" id="1rX-mZ-h6S">
                             <color key="textColor" name="white"/>
-                            <fontDescription key="font" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                            <fontDescription key="font" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="14"/>
                         </label>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Button" id="St8-8a-iAy"/>
                     </items>
                     <color key="backgroundColor" name="background"/>
+                    <edgeInsets key="margins" left="1" right="1" top="4" bottom="0.0"/>
+                    <connections>
+                        <outlet property="labelObject" destination="1rX-mZ-h6S" id="WVc-Ct-KCr"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="219.69230769230771" y="341.74358974358978"/>
+            <point key="canvasLocation" x="219.69230769230771" y="339.5641025641026"/>
         </scene>
         <!--detailpage-->
         <scene sceneID="Jy3-cN-V8U">
             <objects>
                 <controller identifier="detailpage" id="rIa-nZ-L98" customClass="detailInterfaceController" customModule="URBN_SECRETS_WATCH_Extension">
                     <items>
-                        <button width="1" height="25" alignment="left" title="Hybrid Lab" id="nP9-u1-CM0">
+                        <button width="1" height="25" alignment="center" title="HYBRID LAB" id="nP9-u1-CM0">
                             <color key="titleColor" name="background"/>
                             <color key="backgroundColor" name="white"/>
+                            <fontDescription key="font" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
                         </button>
-                        <imageView width="136" height="111" alignment="center" verticalAlignment="center" image="Hybrid Making Lab" contentMode="scaleAspectFit" id="bSv-Ad-DB1"/>
+                        <imageView width="136" height="111" alignment="center" verticalAlignment="center" image="hybridLab-watch" contentMode="scaleAspectFit" id="bSv-Ad-DB1"/>
                         <label width="136" height="152" alignment="center" verticalAlignment="center" textAlignment="left" numberOfLines="12" id="I9X-Ug-BZ3">
-                            <string key="text">The Hybrid Lab has fabrication equipment and a production space in a multidisciplinary setting.It has a variety of micro and small scale tools geared toward model making and small scale prototyping.</string>
+                            <string key="text">The Hybrid Lab has fabrication equipment and a production space in a multidisciplinary setting. It has a variety of micro and small scale tools geared toward model making and small scale prototyping.</string>
                             <color key="textColor" name="white"/>
-                            <fontDescription key="font" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                            <fontDescription key="font" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="14"/>
                         </label>
                     </items>
                     <color key="backgroundColor" name="background"/>
@@ -79,7 +75,7 @@
                             <color key="textColor" name="white"/>
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
-                        <imageView width="1" height="108" alignment="left" image="Hybrid Making Lab" contentMode="scaleAspectFit" id="XYr-ky-FpB"/>
+                        <imageView width="1" height="108" alignment="left" image="hybridLab-watch" contentMode="scaleAspectFit" id="XYr-ky-FpB"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="pizza.category" id="JfB-70-Muf">
                         <color key="titleColor" name="white"/>
@@ -107,7 +103,7 @@
                             <color key="textColor" name="white"/>
                             <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
                         </label>
-                        <imageView width="1" height="108" alignment="left" image="Hybrid Making Lab" contentMode="scaleAspectFit" id="e1E-kB-JSY"/>
+                        <imageView width="1" height="108" alignment="left" image="hybridLab-watch" contentMode="scaleAspectFit" id="e1E-kB-JSY"/>
                     </items>
                     <connections>
                         <outlet property="bodyLabel" destination="pJ1-MS-uD2" id="A3M-Gh-BF9"/>
@@ -121,9 +117,6 @@
     <resources>
         <namedColor name="background">
             <color red="0.15700000524520874" green="0.15700000524520874" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="blue-accent">
-            <color red="0.16500000655651093" green="0.46700000762939453" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="white">
             <color red="0.75300002098083496" green="0.81599998474121094" blue="0.83499997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
