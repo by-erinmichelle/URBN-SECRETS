@@ -11,8 +11,8 @@ import UserNotifications
 
 class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     var isGrantedAccess = false   //flag if User granted access
-    var pizzaStepIndex = 0
-    let pizzaSteps = ["Make Pizza","Roll Dough",  "Add Sauce","Add Cheese","Add Ingredients", "Bake", "Done"]
+//    var pizzaStepIndex = 0
+//    let pizzaSteps = ["Make Pizza","Roll Dough",  "Add Sauce","Add Cheese","Add Ingredients", "Bake", "Done"]
     
     // Image Attachment -----------------------------------------
     func pizzaImage()->[UNNotificationAttachment]{
@@ -34,8 +34,8 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
             // Content ------------------------------------------------
             let content = UNMutableNotificationContent()
             
-            content.title = "URBN SECRETS"
-            content.body = "You found a location!"
+            content.title = "Congrats!"
+            content.body = "You found the Hybrid Lab"
             content.sound = UNNotificationSound.default()
             content.attachments = pizzaImage()
             
@@ -68,43 +68,43 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         
         //Identify the action and request -------------------------------------
         let action = response.actionIdentifier
-        let request = response.notification.request
+//        let request = response.notification.request
         
         //Respond to the action -----------------------------------------------
-        if action == "snooze.action"{
-            // Add the request back to the notification center
-            //--- code to handle attachments and apple watch
-            // must refresh the attachment to avoid URL error---. (Xcode 8.2.1)
-            let content = request.content.mutableCopy() as! UNMutableNotificationContent
-            content.attachments = pizzaImage()
-            let newRequest = UNNotificationRequest(identifier: request.identifier, content: content, trigger: request.trigger)
-            //-- If not using attachments, just send the request and skip all that above ---
-            //UNUserNotificationCenter.current().add(request) {
-            // Send the request back
-            UNUserNotificationCenter.current().add(newRequest) {
-                (notificationError) in
-                if let error = notificationError{
-                    print("Error(snooze.action): \(error.localizedDescription)")
-                }
-            }
-            
-        }
+//        if action == "snooze.action"{
+//            // Add the request back to the notification center
+//            //--- code to handle attachments and apple watch
+//            // must refresh the attachment to avoid URL error---. (Xcode 8.2.1)
+//            let content = request.content.mutableCopy() as! UNMutableNotificationContent
+//            content.attachments = pizzaImage()
+//            let newRequest = UNNotificationRequest(identifier: request.identifier, content: content, trigger: request.trigger)
+//            //-- If not using attachments, just send the request and skip all that above ---
+//            //UNUserNotificationCenter.current().add(request) {
+//            // Send the request back
+//            UNUserNotificationCenter.current().add(newRequest) {
+//                (notificationError) in
+//                if let error = notificationError{
+//                    print("Error(snooze.action): \(error.localizedDescription)")
+//                }
+//            }
+        
+//        }
         
         if action == "next.action"{
             // Add a new request to the notification center with different content
             // the subtitle will indicate the current step.
-            let content = request.content.mutableCopy() as! UNMutableNotificationContent
-            pizzaStepIndex = (pizzaStepIndex + 1) % pizzaSteps.count
-            content.subtitle = pizzaSteps[pizzaStepIndex]
-            content.attachments = pizzaImage() // See line 74 above
-            let newRequest = UNNotificationRequest(identifier: request.identifier, content: content, trigger: request.trigger)
-            UNUserNotificationCenter.current().add(newRequest) {
-                (notificationError) in
-                if let error = notificationError{
-                    let a = newRequest.content.attachments[0].url
-                    print("Error(next.action): \(error.localizedDescription) , URL \(a)")
-                }
-            }
+//            let content = request.content.mutableCopy() as! UNMutableNotificationContent
+////            pizzaStepIndex = (pizzaStepIndex + 1) % pizzaSteps.count
+////            content.subtitle = pizzaSteps[pizzaStepIndex]
+//            content.attachments = pizzaImage() // See line 74 above
+//            let newRequest = UNNotificationRequest(identifier: request.identifier, content: content, trigger: request.trigger)
+//            UNUserNotificationCenter.current().add(newRequest) {
+//                (notificationError) in
+//                if let error = notificationError{
+//                    let a = newRequest.content.attachments[0].url
+//                    print("Error(next.action): \(error.localizedDescription) , URL \(a)")
+//                }
+//            }
             
         }
         completionHandler() // <--- Don't forget calling the completion Handler!
@@ -114,7 +114,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     func setCategories(){
         // Declare Actions ---------------------------------------
 //        let snoozeAction = UNNotificationAction(identifier: "snooze.action", title: "Snooze", options: [])
-        let nextAction = UNNotificationAction(identifier: "next.action", title: "Next", options: [])
+        let nextAction = UNNotificationAction(identifier: "next.action", title: "Details", options: [])
         // Declare and set the categories ------------------------
         let pizzaCategory = UNNotificationCategory(identifier: "pizza.category", actions: [nextAction], intentIdentifiers: [], options: [])
         UNUserNotificationCenter.current().setNotificationCategories([pizzaCategory])

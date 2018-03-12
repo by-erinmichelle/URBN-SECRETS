@@ -20,24 +20,34 @@
                                 <label alignment="left" text="status Label" id="Rfb-0g-wEn"/>
                             </items>
                         </group>
-                        <group width="1" alignment="left" id="Gv2-bO-2xD">
-                            <items>
-                                <button width="1" alignment="left" title="action Button" id="a0U-7Z-8X0"/>
-                            </items>
-                        </group>
+                        <imageView alignment="left" image="pizzaImage" id="ZNC-we-HO9"/>
                     </items>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--detailpage-->
+        <scene sceneID="Jy3-cN-V8U">
+            <objects>
+                <controller identifier="detailpage" id="rIa-nZ-L98">
+                    <items>
+                        <label alignment="left" text="second" id="Zc4-Eg-shb"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="465" y="335"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Congrats!" id="IdU-wH-bcW"/>
+                        <label alignment="left" text="Congrats!" id="IdU-wH-bcW">
+                            <color key="textColor" name="white"/>
+                        </label>
+                        <imageView alignment="left" image="pizzaImage" id="XYr-ky-FpB"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf">
+                    <notificationCategory key="notificationCategory" identifier="pizza.category" id="JfB-70-Muf">
                         <color key="titleColor" name="white"/>
                         <color key="sashColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </notificationCategory>
@@ -56,10 +66,17 @@
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="URBN_SECRETS_WATCH" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="&lt;title&gt;" id="kWZ-Yi-XBE">
+                            <color key="textColor" name="white"/>
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
+                        <label alignment="left" text="&lt;body&gt;" numberOfLines="0" id="pJ1-MS-uD2">
+                            <color key="textColor" name="white"/>
+                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                        </label>
+                        <imageView alignment="left" image="pizzaImage" id="e1E-kB-JSY"/>
                     </items>
                     <connections>
+                        <outlet property="bodyLabel" destination="pJ1-MS-uD2" id="A3M-Gh-BF9"/>
                         <outlet property="titleLabel" destination="kWZ-Yi-XBE" id="BEm-V9-Dbw"/>
                     </connections>
                 </controller>

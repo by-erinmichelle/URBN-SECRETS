@@ -73,7 +73,7 @@
 /* Begin PBXFileReference section */
 		F80795482054543400558BC7 /* URBN SECRETS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URBN SECRETS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F807954B2054543400558BC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F807954D2054543400558BC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F807954D2054543400558BC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		F80795502054543400558BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F80795532054543400558BC7 /* URBN_SECRETS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = URBN_SECRETS.xcdatamodel; sourceTree = "<group>"; };
 		F80795552054543400558BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };

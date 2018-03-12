@@ -62,6 +62,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterD
         completionHandler([.sound,.alert])
         print("will present!")
     }
+
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         let actionIdentifier = response.actionIdentifier
         if actionIdentifier == "dessert.action"{
@@ -80,7 +81,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterD
         }
         completionHandler()
     }
-    
+
     // MARK: -  Categories and  Notification actions
     func setCategories(){
         // Declare Actions ---------------------------------------
