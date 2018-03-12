@@ -39,10 +39,7 @@ class NotificationController: WKUserNotificationInterfaceController {
         // After populating your dynamic notification interface call the completion block.
         let content = notification.request.content
         titleLabel.setText(content.title)
-        bodyLabel.setText(content.body)
-
-//        subtitleLabel.setText(content.subtitle)
-        
+        bodyLabel.setText(content.body)        
         
         
         completionHandler(.custom)

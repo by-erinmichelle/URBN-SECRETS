@@ -52,7 +52,7 @@
         <!--detailpage-->
         <scene sceneID="Jy3-cN-V8U">
             <objects>
-                <controller identifier="detailpage" id="rIa-nZ-L98">
+                <controller identifier="detailpage" id="rIa-nZ-L98" customClass="detailInterfaceController" customModule="URBN_SECRETS_WATCH_Extension">
                     <items>
                         <button width="1" height="25" alignment="left" title="Hybrid Lab" id="nP9-u1-CM0">
                             <color key="titleColor" name="background"/>
@@ -77,6 +77,7 @@
                     <items>
                         <label alignment="left" text="Congrats!" id="IdU-wH-bcW">
                             <color key="textColor" name="white"/>
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
                         <imageView width="1" height="108" alignment="left" image="Hybrid Making Lab" contentMode="scaleAspectFit" id="XYr-ky-FpB"/>
                     </items>

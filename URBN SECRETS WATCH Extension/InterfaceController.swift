@@ -20,13 +20,15 @@ class InterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
+        WKInterfaceDevice.current().play(.click)
+
         // Configure interface objects here.
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        WKInterfaceDevice.current().play(.click)
     }
     
     override func didDeactivate() {

@@ -61,39 +61,32 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate,UNUserNotificationCenterD
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.sound,.alert])
         print("will present!")
+        WKInterfaceDevice.current().play(.click)
     }
 
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         let actionIdentifier = response.actionIdentifier
-        if actionIdentifier == "dessert.action"{
-            print("Dessert")
-        }
+
         if actionIdentifier == "next.action"{
             print("Next Action")
+            WKInterfaceDevice.current().play(.click)
+
+
         }
-        if actionIdentifier == "snooze.action"{
-            print("Snoozing!!!")
-        }
-        if actionIdentifier == "stop.action"{
-            let center = UNUserNotificationCenter.current()
-            center.removeAllDeliveredNotifications()
-            center.removeAllPendingNotificationRequests()
-        }
+
         completionHandler()
     }
 
     // MARK: -  Categories and  Notification actions
     func setCategories(){
         // Declare Actions ---------------------------------------
-        let snoozeAction = UNNotificationAction(identifier: "snooze.action", title: "Snooze", options: [])
+
         let nextAction = UNNotificationAction(identifier: "next.action", title: "Next", options: [])
-        let dessertAction = UNNotificationAction(identifier: "dessert.action", title: "Hot Fudge", options: [])
-        let stopAction = UNNotificationAction(identifier: "stop.action", title: "No Dessert", options: [])
-        
+
         // Declare and set the categories ------------------------
-        let pizzaCategory = UNNotificationCategory(identifier: "pizza.category", actions: [snoozeAction,nextAction,dessertAction], intentIdentifiers: [], options: [])
-        let dessertCategory = UNNotificationCategory(identifier: "dessert.category", actions: [dessertAction,stopAction], intentIdentifiers: [], options: [])
-        UNUserNotificationCenter.current().setNotificationCategories([pizzaCategory,dessertCategory])
+        let pizzaCategory = UNNotificationCategory(identifier: "pizza.category", actions: [nextAction], intentIdentifiers: [], options: [])
+       
+        UNUserNotificationCenter.current().setNotificationCategories([pizzaCategory])
     }
 }
 

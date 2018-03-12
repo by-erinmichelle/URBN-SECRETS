@@ -29,5 +29,9 @@
 	<string>com.byerinmichelle.URBN-SECRETS</string>
 	<key>WKWatchKitApp</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Franklin Gothic Medium Cond</string>
+	</array>
 </dict>
 </plist>

@@ -32,7 +32,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
             let content = UNMutableNotificationContent()
             
             content.title = "Congrats!"
-            content.body = "You found the Hybrid Lab"
+//            content.body = "You found the Hybrid Lab"
             content.sound = UNNotificationSound.default()
             content.attachments = pizzaImage()
             
@@ -41,7 +41,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
             
             // Trigger-------------------------------------------------
 //            tells phone when to schedule notif
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0 , repeats: false)
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.001 , repeats: false)
             
             // Make and schedule the request ---------------------------
             let request = UNNotificationRequest(identifier: "Pizza", content: content, trigger: trigger)
@@ -101,12 +101,12 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
         UNUserNotificationCenter.current().setNotificationCategories([pizzaCategory])
     }
     
-    //MARK: - IB Actions
-    @IBAction func startNotifications(_ sender: UIButton) {
-//        this function calls notification
-        timedNotification()
-        
-    }
+//    //MARK: - IB Actions
+//    @IBAction func startNotifications(_ sender: UIButton) {
+////        this function calls notification
+//        timedNotification()
+//        
+//    }
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -136,6 +136,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
         if (trigger.identifier == "triggerCar" && trigger.state == true) {
             timedNotification()
             print("hey now")
+//            WKInterfaceDevice.current().play(.success)
         } else {
             print("aw man")
         }

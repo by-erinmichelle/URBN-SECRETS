@@ -25,7 +25,9 @@
 		F807958B2054592600558BC7 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F807958A2054592600558BC7 /* EstimoteSDK.framework */; };
 		F807958E205558E400558BC7 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807958D205558E400558BC7 /* WatchConnectivityManager.swift */; };
 		F807958F205558E500558BC7 /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807958D205558E400558BC7 /* WatchConnectivityManager.swift */; };
-		F80795A420559B5A00558BC7 /* pizzaImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F80795A320559B5A00558BC7 /* pizzaImage.png */; };
+		F8EA9F062056FCD000FA094A /* pizzaImage.png in Resources */ = {isa = PBXBuildFile; fileRef = F8EA9F052056FCD000FA094A /* pizzaImage.png */; };
+		F8EA9F0D2057218C00FA094A /* Franklin Gothic Medium Cond Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EA9F0C2057218C00FA094A /* Franklin Gothic Medium Cond Regular.ttf */; };
+		F8EA9F0E2057218C00FA094A /* Franklin Gothic Medium Cond Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EA9F0C2057218C00FA094A /* Franklin Gothic Medium Cond Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +96,8 @@
 		F807958A2054592600558BC7 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EstimoteSDK.framework; sourceTree = "<group>"; };
 		F807958C20545A1900558BC7 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		F807958D205558E400558BC7 /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
-		F80795A320559B5A00558BC7 /* pizzaImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizzaImage.png; sourceTree = "<group>"; };
+		F8EA9F052056FCD000FA094A /* pizzaImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pizzaImage.png; sourceTree = "<group>"; };
+		F8EA9F0C2057218C00FA094A /* Franklin Gothic Medium Cond Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Franklin Gothic Medium Cond Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,8 +143,9 @@
 		F807954A2054543400558BC7 /* URBN SECRETS */ = {
 			isa = PBXGroup;
 			children = (
-				F80795A320559B5A00558BC7 /* pizzaImage.png */,
+				F8EA9F052056FCD000FA094A /* pizzaImage.png */,
 				F807954B2054543400558BC7 /* AppDelegate.swift */,
+				F8EA9F0C2057218C00FA094A /* Franklin Gothic Medium Cond Regular.ttf */,
 				F807954D2054543400558BC7 /* ViewController.swift */,
 				F807954F2054543400558BC7 /* Main.storyboard */,
 				F80795552054543400558BC7 /* Assets.xcassets */,
@@ -301,9 +305,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F80795A420559B5A00558BC7 /* pizzaImage.png in Resources */,
 				F80795592054543400558BC7 /* LaunchScreen.storyboard in Resources */,
 				F80795562054543400558BC7 /* Assets.xcassets in Resources */,
+				F8EA9F062056FCD000FA094A /* pizzaImage.png in Resources */,
 				F80795512054543400558BC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F80795682054549900558BC7 /* Assets.xcassets in Resources */,
+				F8EA9F0D2057218C00FA094A /* Franklin Gothic Medium Cond Regular.ttf in Resources */,
 				F80795662054549900558BC7 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F807957C2054549900558BC7 /* Assets.xcassets in Resources */,
+				F8EA9F0E2057218C00FA094A /* Franklin Gothic Medium Cond Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
