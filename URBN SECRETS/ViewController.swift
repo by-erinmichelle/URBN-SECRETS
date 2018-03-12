@@ -9,10 +9,8 @@
 import UIKit
 import UserNotifications
 
-class ViewController: UIViewController, UNUserNotificationCenterDelegate {
+class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTriggerManagerDelegate {
     var isGrantedAccess = false   //flag if User granted access
-//    var pizzaStepIndex = 0
-//    let pizzaSteps = ["Make Pizza","Roll Dough",  "Add Sauce","Add Cheese","Add Ingredients", "Bake", "Done"]
     
     // Image Attachment -----------------------------------------
     func pizzaImage()->[UNNotificationAttachment]{
@@ -26,7 +24,6 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
             return []
         }
     }
-    
     
     //MARK:  - Schedule the Timed Notification
     func timedNotification(){
@@ -46,7 +43,6 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
 //            tells phone when to schedule notif
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5.0 , repeats: false)
             
-            
             // Make and schedule the request ---------------------------
             let request = UNNotificationRequest(identifier: "Pizza", content: content, trigger: trigger)
             UNUserNotificationCenter.current().add(request) {
@@ -58,6 +54,10 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         }
     }
     
+//estimote trigger----------------------------
+    //Add the trigger manager
+        let triggerManager = ESTTriggerManager()
+
     //MARK: - Notification Delegates
     // Once you adopt the protocol, add this method for in-app notification presentation.
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
@@ -69,26 +69,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
         //Identify the action and request -------------------------------------
         let action = response.actionIdentifier
 //        let request = response.notification.request
-        
-        //Respond to the action -----------------------------------------------
-//        if action == "snooze.action"{
-//            // Add the request back to the notification center
-//            //--- code to handle attachments and apple watch
-//            // must refresh the attachment to avoid URL error---. (Xcode 8.2.1)
-//            let content = request.content.mutableCopy() as! UNMutableNotificationContent
-//            content.attachments = pizzaImage()
-//            let newRequest = UNNotificationRequest(identifier: request.identifier, content: content, trigger: request.trigger)
-//            //-- If not using attachments, just send the request and skip all that above ---
-//            //UNUserNotificationCenter.current().add(request) {
-//            // Send the request back
-//            UNUserNotificationCenter.current().add(newRequest) {
-//                (notificationError) in
-//                if let error = notificationError{
-//                    print("Error(snooze.action): \(error.localizedDescription)")
-//                }
-//            }
-        
-//        }
+    
         
         if action == "next.action"{
             // Add a new request to the notification center with different content
@@ -122,6 +103,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     
     //MARK: - IB Actions
     @IBAction func startNotifications(_ sender: UIButton) {
+//        this function calls notification
         timedNotification()
         
     }
@@ -139,8 +121,26 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate {
                 UNUserNotificationCenter.current().delegate = self
             }
         })
+        // Set the trigger manager's delegate
+        self.triggerManager.delegate = self
+        let rule2 = ESTOrientationRule.orientationEquals(
+            .horizontalUpsideDown, for: .bag)
+        let rule1 = ESTProximityRule.inRangeOf(.car)
+        let triggerCar = ESTTrigger(rules: [rule1, rule2], identifier: "triggerCar")
+        self.triggerManager.startMonitoring(for: triggerCar)
+
     }
     
+    func triggerManager(_ manager: ESTTriggerManager,
+                        triggerChangedState trigger: ESTTrigger) {
+        if (trigger.identifier == "triggerCar" && trigger.state == true) {
+            timedNotification()
+            print("hey now")
+        } else {
+            print("aw man")
+        }
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

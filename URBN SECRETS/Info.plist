@@ -20,7 +20,7 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSLocationAlwaysUsageDescription</key>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Enable Location Services to detect how close you are to the nearest hidden location</string>
 	<key>UIBackgroundModes</key>
 	<array>
@@ -45,5 +45,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Enable Location Services to detect how close you are to the nearest hidden location</string>
 </dict>
 </plist>
