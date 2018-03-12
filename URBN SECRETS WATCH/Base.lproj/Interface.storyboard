@@ -26,9 +26,6 @@
                             </items>
                         </group>
                     </items>
-                    <connections>
-                        <outlet property="actionGroup" destination="Gv2-bO-2xD" id="SDR-dy-6Wz"/>
-                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
