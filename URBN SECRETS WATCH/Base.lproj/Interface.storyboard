@@ -51,11 +51,20 @@
             <objects>
                 <controller identifier="detailpage" id="rIa-nZ-L98">
                     <items>
-                        <label alignment="left" text="second" id="Zc4-Eg-shb"/>
+                        <label alignment="center" text="Hybrid Lab" textAlignment="center" id="Zc4-Eg-shb">
+                            <color key="textColor" name="white"/>
+                        </label>
+                        <imageView width="136" height="92" alignment="center" image="Hybrid Making Lab" id="bSv-Ad-DB1"/>
+                        <label width="136" height="103" alignment="center" verticalAlignment="center" textAlignment="left" numberOfLines="10" id="I9X-Ug-BZ3">
+                            <string key="text">The Hybrid Lab has fabrication equipment and a production space in a multidisciplinary setting.It has a variety of micro and small scale tools geared toward model making and small scale prototyping.</string>
+                            <color key="textColor" name="white"/>
+                            <fontDescription key="font" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                        </label>
                     </items>
+                    <color key="backgroundColor" name="background"/>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="465" y="335"/>
+            <point key="canvasLocation" x="464.66666666666669" y="331.28205128205133"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -65,7 +74,7 @@
                         <label alignment="left" text="Congrats!" id="IdU-wH-bcW">
                             <color key="textColor" name="white"/>
                         </label>
-                        <imageView alignment="left" image="button-watch" id="XYr-ky-FpB"/>
+                        <imageView alignment="left" image="Hybrid Making Lab" id="XYr-ky-FpB"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="pizza.category" id="JfB-70-Muf">
                         <color key="titleColor" name="white"/>
@@ -93,7 +102,7 @@
                             <color key="textColor" name="white"/>
                             <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
                         </label>
-                        <imageView alignment="left" image="button-watch" id="e1E-kB-JSY"/>
+                        <imageView alignment="left" image="Hybrid Making Lab" id="e1E-kB-JSY"/>
                     </items>
                     <connections>
                         <outlet property="bodyLabel" destination="pJ1-MS-uD2" id="A3M-Gh-BF9"/>
