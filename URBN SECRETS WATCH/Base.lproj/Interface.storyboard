@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,19 +9,39 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-DemiBold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="URBN_SECRETS_WATCH" customModuleProvider="target">
                     <items>
-                        <group width="1" alignment="left" id="NGF-TT-TPm">
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Start Exploring" backgroundImage="button-watch" id="BCv-L7-gn5">
+                            <color key="titleColor" name="background"/>
+                            <color key="backgroundColor" name="blue-accent"/>
+                            <fontDescription key="font" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
+                        </button>
+                        <group width="1" alignment="left" id="mgB-k7-nO2">
                             <items>
-                                <label alignment="left" text="status Label" id="Rfb-0g-wEn"/>
+                                <label width="121" height="42" alignment="left" text="URBN SECRETS" textAlignment="center" baselineAdjustment="alignCenters" id="Gmt-Pw-Mxy">
+                                    <color key="textColor" name="white"/>
+                                    <fontDescription key="font" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                                </label>
+                                <imageView width="28" height="44" alignment="right" image="appicon-1" contentMode="scaleAspectFit" id="dXC-kT-eaU"/>
                             </items>
                         </group>
-                        <imageView alignment="left" image="pizzaImage" id="ZNC-we-HO9"/>
+                        <label width="136" height="103" alignment="center" verticalAlignment="center" text="Welcome! With URBN SECRETS you can find hidden locations around Drexel's URBN Center and learn cool facts." textAlignment="left" numberOfLines="10" id="1rX-mZ-h6S">
+                            <color key="textColor" name="white"/>
+                            <fontDescription key="font" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                        </label>
                     </items>
+                    <color key="backgroundColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
@@ -45,7 +65,7 @@
                         <label alignment="left" text="Congrats!" id="IdU-wH-bcW">
                             <color key="textColor" name="white"/>
                         </label>
-                        <imageView alignment="left" image="pizzaImage" id="XYr-ky-FpB"/>
+                        <imageView alignment="left" image="button-watch" id="XYr-ky-FpB"/>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="pizza.category" id="JfB-70-Muf">
                         <color key="titleColor" name="white"/>
@@ -73,7 +93,7 @@
                             <color key="textColor" name="white"/>
                             <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
                         </label>
-                        <imageView alignment="left" image="pizzaImage" id="e1E-kB-JSY"/>
+                        <imageView alignment="left" image="button-watch" id="e1E-kB-JSY"/>
                     </items>
                     <connections>
                         <outlet property="bodyLabel" destination="pJ1-MS-uD2" id="A3M-Gh-BF9"/>
@@ -85,6 +105,15 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="background">
+            <color red="0.1650000066" green="0.15700000519999999" blue="0.16099999849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blue-accent">
+            <color red="0.20399999620000001" green="0.54500001669999998" blue="0.77600002290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="0.79600000380000002" green="0.851000011" blue="0.86699998379999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="white">
             <color red="0.79600000380000002" green="0.851000011" blue="0.86699998379999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
