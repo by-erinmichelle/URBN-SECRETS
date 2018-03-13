@@ -128,7 +128,7 @@
                                     <segue destination="ert-Kx-abn" kind="show" id="amf-JR-5oA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGJ-gj-wbP">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGJ-gj-wbP">
                                 <rect key="frame" x="27" y="529" width="321" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
@@ -283,7 +283,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j40-MG-HqX">
                                 <rect key="frame" x="34" y="331" width="307" height="413"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <mutableString key="text">The  FHCC holds roughly 14,000 objects of dress, accessories, and objects relating to fashion. A full inventory is in progress to establish the exact number. It contains works by many of the great designers- from Gabrielle “Coco” Chanel, Christian Dior, and Elsa Schiaparelli to Charles James, Halston, and Ralph Rucci. The Collection is fortunate to include examples by rare but important designers such as Emilio Schuberth, Jessie Franklin Turner, Vitaldi Babani, and Natacha Rambova. Of special note is a large group of garments by the early 20th century couture house of Callot Soeurs.</mutableString>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
@@ -449,9 +449,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2E-sH-PBh">
-                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <rect key="frame" x="34" y="331" width="307" height="316"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <string key="text">Drexel RePlay enables Drexel students to:
+Explore theory and academic work related to gaming and 3D simulations
+Gain familiarity with common game programming tools and software packages
+Formally develop potential game ideas through design documents, market research, and proof-of-concept demonstrations
+Engage in both short-term and long-term game production and research</string>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
@@ -482,7 +486,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6M-sF-yd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-222" y="740"/>
+            <point key="canvasLocation" x="-223.19999999999999" y="739.65517241379314"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bn3-h5-lsY">
@@ -714,7 +718,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vV9-li-VTN"/>
-        <segue reference="6aI-uo-Z5l"/>
+        <segue reference="CYs-Hp-AXV"/>
     </inferredMetricsTieBreakers>
 </document>
