@@ -102,6 +102,9 @@
                                 <state key="normal" title="       Fox Historic Costume..." backgroundImage="redBtn-2">
                                     <color key="titleColor" name="background"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2fb-yf-Yec" kind="show" id="QzI-dG-z2x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8k-wR-eDz">
                                 <rect key="frame" x="27" y="301" width="321" height="57"/>
@@ -110,6 +113,9 @@
                                 <state key="normal" title="       Motion Capture Lab" backgroundImage="button">
                                     <color key="titleColor" name="background"/>
                                 </state>
+                                <connections>
+                                    <segue destination="LKj-jm-Qjk" kind="show" id="Z60-Kq-2Ti"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoU-Es-2Jl">
                                 <rect key="frame" x="27" y="378" width="321" height="57"/>
@@ -118,6 +124,9 @@
                                 <state key="normal" title="       DIGM Reel" backgroundImage="button">
                                     <color key="titleColor" name="background"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ert-Kx-abn" kind="show" id="amf-JR-5oA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGJ-gj-wbP">
                                 <rect key="frame" x="27" y="529" width="321" height="57"/>
@@ -126,6 +135,9 @@
                                 <state key="normal" title="       Stairwell Mural" backgroundImage="greenBtn-2">
                                     <color key="titleColor" name="background"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dMG-aA-OsN" kind="show" id="PZS-ly-oDG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4X-h6-5Bi">
                                 <rect key="frame" x="27" y="605" width="321" height="57"/>
@@ -134,6 +146,9 @@
                                 <state key="normal" title="       Nureva Projector" backgroundImage="lgreenBtn-2">
                                     <color key="titleColor" name="background"/>
                                 </state>
+                                <connections>
+                                    <segue destination="7E0-0Q-OWh" kind="show" id="Hno-Ik-DLd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FOUND LOCATIONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dny-Pr-YL2">
                                 <rect key="frame" x="0.0" y="86" width="375" height="40"/>
@@ -150,6 +165,9 @@
                                 <state key="normal" title="       Design Futures Lab" backgroundImage="yellowBtn-2">
                                     <color key="titleColor" name="background"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Bo6-oZ-1RB" kind="show" id="vV9-li-VTN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axz-WK-jPO">
                                 <rect key="frame" x="16" y="44" width="109" height="30"/>
@@ -173,6 +191,9 @@
                                 <state key="normal" title="       Replay Lab" backgroundImage="lblueBtn-2">
                                     <color key="titleColor" name="background"/>
                                 </state>
+                                <connections>
+                                    <segue destination="WFo-Wz-R5b" kind="show" id="EG4-MC-blp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="background"/>
@@ -206,7 +227,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEa-vw-hlW">
                                 <rect key="frame" x="34" y="331" width="307" height="413"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</mutableString>
+                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
@@ -237,7 +258,399 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sjc-Tk-qRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2327" y="-3"/>
+            <point key="canvasLocation" x="2450" y="32"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qw9-Ly-MJJ">
+            <objects>
+                <viewController id="2fb-yf-Yec" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qTe-pO-ZR7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="HGf-xr-TXN">
+                                <rect key="frame" x="34" y="155" width="307" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLOOR 1 - FOX HISTORIC COSTUME COLLECTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-aj-N21">
+                                <rect key="frame" x="0.0" y="88" width="385" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="white"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
+                                <color key="textColor" name="background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j40-MG-HqX">
+                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dH7-aq-mO5">
+                                <rect key="frame" x="16" y="44" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" name="white"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zqe-Na-E27" kind="show" id="mJ7-P2-Mfr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrow-3" translatesAutoresizingMaskIntoConstraints="NO" id="86Y-eD-h5C">
+                                <rect key="frame" x="16" y="44" width="17" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pagination-2" translatesAutoresizingMaskIntoConstraints="NO" id="cqI-6E-lJJ">
+                                <rect key="frame" x="92" y="721" width="191" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <viewLayoutGuide key="safeArea" id="IcB-WI-KFw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bLf-nE-xCt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2298" y="760"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="KY9-x3-Gba">
+            <objects>
+                <viewController id="LKj-jm-Qjk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wEh-A7-Huz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="uUf-Cy-4af">
+                                <rect key="frame" x="34" y="155" width="307" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLOOR 2 - MOTION CAPTURE LAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfj-1c-XnO">
+                                <rect key="frame" x="0.0" y="88" width="385" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="white"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <color key="textColor" name="background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6p-S7-ctA">
+                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sib-vy-x7P">
+                                <rect key="frame" x="16" y="44" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" name="white"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zqe-Na-E27" kind="show" id="pUX-Or-kq3"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrow-3" translatesAutoresizingMaskIntoConstraints="NO" id="0OC-jH-omM">
+                                <rect key="frame" x="16" y="44" width="17" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pagination-2" translatesAutoresizingMaskIntoConstraints="NO" id="Udk-b7-5Ve">
+                                <rect key="frame" x="92" y="721" width="191" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <viewLayoutGuide key="safeArea" id="ScM-wW-htQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ys6-rg-JEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1465" y="864"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8r2-Ih-ME1">
+            <objects>
+                <viewController id="ert-Kx-abn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xFF-70-BpW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="jSG-PK-MyJ">
+                                <rect key="frame" x="34" y="155" width="307" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLOOR 2 - DIGM REEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCX-tL-gnR">
+                                <rect key="frame" x="0.0" y="88" width="385" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="white"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <color key="textColor" name="background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ2-OT-1qj">
+                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sZ-AC-WbG">
+                                <rect key="frame" x="16" y="44" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" name="white"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zqe-Na-E27" kind="show" id="aA5-tW-3zh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrow-3" translatesAutoresizingMaskIntoConstraints="NO" id="HWt-HV-jYb">
+                                <rect key="frame" x="16" y="44" width="17" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pagination-2" translatesAutoresizingMaskIntoConstraints="NO" id="a0x-ir-Tv6">
+                                <rect key="frame" x="92" y="721" width="191" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <viewLayoutGuide key="safeArea" id="aJ8-fA-aFf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JMm-Ux-g7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="853"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Icw-Mp-mCT">
+            <objects>
+                <viewController id="WFo-Wz-R5b" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DkG-3e-esI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="RU1-AL-Gql">
+                                <rect key="frame" x="34" y="155" width="307" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLOOR 2A - REPLAY LAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoy-YJ-d8f">
+                                <rect key="frame" x="0.0" y="88" width="385" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="white"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <color key="textColor" name="background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2E-sH-PBh">
+                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbQ-MR-KGH">
+                                <rect key="frame" x="16" y="44" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" name="white"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zqe-Na-E27" kind="show" id="CYs-Hp-AXV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrow-3" translatesAutoresizingMaskIntoConstraints="NO" id="UP8-4Q-0SM">
+                                <rect key="frame" x="16" y="44" width="17" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pagination-2" translatesAutoresizingMaskIntoConstraints="NO" id="KZc-77-Bpi">
+                                <rect key="frame" x="92" y="721" width="191" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <viewLayoutGuide key="safeArea" id="NrC-Pc-ka9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E6M-sF-yd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-222" y="740"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bn3-h5-lsY">
+            <objects>
+                <viewController id="dMG-aA-OsN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JfC-fm-OuG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="dTX-HZ-u6g">
+                                <rect key="frame" x="34" y="155" width="307" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLOOR 3 - STAIRWELL MURAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gud-vU-LZd">
+                                <rect key="frame" x="0.0" y="88" width="385" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="white"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <color key="textColor" name="background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIH-aP-akn">
+                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcK-N0-7Ml">
+                                <rect key="frame" x="16" y="44" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" name="white"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zqe-Na-E27" kind="show" id="GZw-gd-Zfc"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrow-3" translatesAutoresizingMaskIntoConstraints="NO" id="NOh-Gq-oHe">
+                                <rect key="frame" x="16" y="44" width="17" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pagination-2" translatesAutoresizingMaskIntoConstraints="NO" id="yky-D7-bz6">
+                                <rect key="frame" x="92" y="721" width="191" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <viewLayoutGuide key="safeArea" id="gl6-aW-JlD"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PLj-Ru-07K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-916" y="210"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4lx-fc-bxF">
+            <objects>
+                <viewController id="7E0-0Q-OWh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="heZ-NJ-fbP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="acn-jq-afl">
+                                <rect key="frame" x="34" y="155" width="307" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLOOR 3A - NUREVA PROJECTOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryq-Dl-0Ql">
+                                <rect key="frame" x="0.0" y="88" width="385" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="white"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <color key="textColor" name="background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eky-2g-Gbe">
+                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2K-Le-N1U">
+                                <rect key="frame" x="16" y="44" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" name="white"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zqe-Na-E27" kind="show" id="FGG-9Z-0FN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrow-3" translatesAutoresizingMaskIntoConstraints="NO" id="6yT-xo-5v4">
+                                <rect key="frame" x="16" y="44" width="17" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pagination-2" translatesAutoresizingMaskIntoConstraints="NO" id="xIn-pj-pnc">
+                                <rect key="frame" x="92" y="721" width="191" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <viewLayoutGuide key="safeArea" id="539-f9-DLX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgY-Mz-pNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-369" y="-477"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="r8J-19-i7U">
+            <objects>
+                <viewController id="Bo6-oZ-1RB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aIi-yK-ap9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="nFd-m9-oMc">
+                                <rect key="frame" x="34" y="155" width="307" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLOOR 4 - DESIGN FUTURES LAB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6Y-E2-8LA">
+                                <rect key="frame" x="0.0" y="88" width="385" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="white"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <color key="textColor" name="background"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yks-gk-far">
+                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
+                                <color key="textColor" name="white"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8rJ-Rt-Wa9">
+                                <rect key="frame" x="16" y="44" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="24"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" name="white"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zqe-Na-E27" kind="show" id="6aI-uo-Z5l"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backArrow-3" translatesAutoresizingMaskIntoConstraints="NO" id="P0i-Vi-j2Z">
+                                <rect key="frame" x="16" y="44" width="17" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pagination-2" translatesAutoresizingMaskIntoConstraints="NO" id="4zX-um-EB3">
+                                <rect key="frame" x="92" y="721" width="191" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <viewLayoutGuide key="safeArea" id="R8m-BO-faK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LGh-Mh-Cfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="-683"/>
         </scene>
     </scenes>
     <resources>
@@ -258,10 +671,34 @@
             <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="background">
-            <color red="0.15700000524520874" green="0.15700000524520874" blue="0.15700000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background">
+            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background">
+            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background">
+            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background">
+            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background">
+            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="white">
-            <color red="0.75300002098083496" green="0.81599998474121094" blue="0.83499997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="white">
             <color red="0.75300002098083496" green="0.81599998474121094" blue="0.83499997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -269,8 +706,15 @@
         <namedColor name="white">
             <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="white">
+            <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QZH-xp-K21"/>
+        <segue reference="vV9-li-VTN"/>
+        <segue reference="6aI-uo-Z5l"/>
     </inferredMetricsTieBreakers>
 </document>
