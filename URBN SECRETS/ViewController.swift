@@ -59,6 +59,35 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
         }
     }
     
+    //MARK:  - Schedule the Timed Notification
+//    func timedNotificationOne(){
+//        if isGrantedAccess{   // <--- Check for Access
+//            // Content ------------------------------------------------
+//            let content = UNMutableNotificationContent()
+//            
+//            content.title = "Congrats!"
+//            content.body = "You found the Hybrid Lab"
+//            content.sound = UNNotificationSound.default()
+//            content.attachments = pizzaImage()
+//            
+//            // Category --------------------------------------
+//            content.categoryIdentifier = "dog.category"
+//            
+//            // Trigger-------------------------------------------------
+//            //            tells phone when to schedule notif
+//            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 0.001 , repeats: false)
+//            
+//            // Make and schedule the request ---------------------------
+//            let request = UNNotificationRequest(identifier: "Pizza", content: content, trigger: trigger)
+//            UNUserNotificationCenter.current().add(request) {
+//                (notificationError) in
+//                if let error = notificationError{
+//                    print("^Error: \(error.localizedDescription)")
+//                }
+//            }
+//        }
+//    }
+    
 //estimote trigger----------------------------
     //Add the trigger manager
         let triggerManager = ESTTriggerManager()
@@ -107,6 +136,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
         let nextAction = UNNotificationAction(identifier: "next.action", title: "Details", options: [.foreground])
         // Declare and set the categories ------------------------
         let pizzaCategory = UNNotificationCategory(identifier: "pizza.category", actions: [nextAction], intentIdentifiers: [], options: [])
+//        let dogCategory = UNNotificationCategory(identifier: "pizza.category", actions: [nextAction], intentIdentifiers: [], options: [])
         UNUserNotificationCenter.current().setNotificationCategories([pizzaCategory])
     }
     
@@ -130,6 +160,7 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
                 UNUserNotificationCenter.current().delegate = self
             }
         })
+        
         // Set the trigger manager's delegate
         self.triggerManager.delegate = self
         let rule2 = ESTOrientationRule.orientationEquals(
@@ -137,6 +168,12 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
         let rule1 = ESTProximityRule.inRangeOf(.car)
         let triggerCar = ESTTrigger(rules: [rule1, rule2], identifier: "triggerCar")
         self.triggerManager.startMonitoring(for: triggerCar)
+        
+//        let rule3 = ESTOrientationRule.orientationEquals(
+//            .horizontalUpsideDown, for: .dog)
+//        let rule4 = ESTProximityRule.inRangeOf(.bike)
+//        let triggerBike = ESTTrigger(rules: [rule3, rule4], identifier: "triggerBike")
+//        self.triggerManager.startMonitoring(for: triggerBike)
 
     }
     
@@ -145,10 +182,13 @@ class ViewController: UIViewController, UNUserNotificationCenterDelegate, ESTTri
         if (trigger.identifier == "triggerCar" && trigger.state == true) {
             timedNotification()
             print("hey now")
-        } else {
-            print("aw man")
         }
+//        else if (trigger.identifier == "triggerBike" && trigger.state == true) {
+//            timedNotificationOne()
+//            print("aw man")
+//        }
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
