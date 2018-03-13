@@ -212,7 +212,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="E3A-To-dFm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hybrid Making Lab" translatesAutoresizingMaskIntoConstraints="NO" id="E3A-To-dFm">
                                 <rect key="frame" x="34" y="155" width="307" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -268,10 +268,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="HGf-xr-TXN">
-                                <rect key="frame" x="34" y="155" width="307" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FLOOR 1 - FOX HISTORIC COSTUME COLLECTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-aj-N21">
                                 <rect key="frame" x="0.0" y="88" width="385" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -283,7 +279,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j40-MG-HqX">
                                 <rect key="frame" x="34" y="331" width="307" height="413"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">The  FHCC holds roughly 14,000 objects of dress, accessories, and objects relating to fashion. A full inventory is in progress to establish the exact number. It contains works by many of the great designers- from Gabrielle “Coco” Chanel, Christian Dior, and Elsa Schiaparelli to Charles James, Halston, and Ralph Rucci. The Collection is fortunate to include examples by rare but important designers such as Emilio Schuberth, Jessie Franklin Turner, Vitaldi Babani, and Natacha Rambova. Of special note is a large group of garments by the early 20th century couture house of Callot Soeurs.</mutableString>
+                                <string key="text">The  FHCC holds roughly 14,000 objects of dress, accessories, and objects relating to fashion. A full inventory is in progress to establish the exact number. It contains works by many of the great designers- from Gabrielle “Coco” Chanel, Christian Dior, and Elsa Schiaparelli to Charles James, Halston, and Ralph Rucci. The Collection is fortunate to include examples by rare but important designers such as Emilio Schuberth, Jessie Franklin Turner, Vitaldi Babani, and Natacha Rambova. Of special note is a large group of garments by the early 20th century couture house of Callot Soeurs.</string>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
@@ -307,6 +303,10 @@
                                 <rect key="frame" x="92" y="721" width="191" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fhhc" translatesAutoresizingMaskIntoConstraints="NO" id="HGf-xr-TXN">
+                                <rect key="frame" x="34" y="161" width="307" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" name="background"/>
                         <viewLayoutGuide key="safeArea" id="IcB-WI-KFw"/>
@@ -324,7 +324,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="uUf-Cy-4af">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MoCap" translatesAutoresizingMaskIntoConstraints="NO" id="uUf-Cy-4af">
                                 <rect key="frame" x="34" y="155" width="307" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -337,9 +337,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6p-S7-ctA">
-                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <rect key="frame" x="34" y="331" width="307" height="394"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <mutableString key="text">John Berton’s interest is in exploring the higher end of this scale, not just to see if 48 or 60 frames per second is “better,” but to discover where frame rates of 120 to 240 frames per second begin to reach a perception of continuity that no longer relies on inherent motion blur and other artifacts of low frame rate capture. By combining the ACE-Lab’s facilities for high frame rate motion capture, facial performance capture, animation, high frame rate display tools and more, the XHFR lab will examine, develop and test the full pipeline of Extra High Frame Rate production and delivery.</mutableString>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
@@ -370,7 +370,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ys6-rg-JEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1465" y="864"/>
+            <point key="canvasLocation" x="1464.8" y="863.79310344827593"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="8r2-Ih-ME1">
@@ -380,7 +380,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="jSG-PK-MyJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="work-statusboard" translatesAutoresizingMaskIntoConstraints="NO" id="jSG-PK-MyJ">
                                 <rect key="frame" x="34" y="155" width="307" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -393,9 +393,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ2-OT-1qj">
-                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <rect key="frame" x="34" y="331" width="307" height="333"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <string key="text">Projects have included Brain-Computer Interfaces (BCI) for video games, a multi-media interactive dance performance with body tracking, multi-touch games for teaching middle-school children, theme park ride and animation design, interactive online non-linear narrative comics, and advanced animation production techniques. Graduates have obtained jobs at leading companies including Pixar, Microsoft XBOX, NCSoft, Dreamworks, and Disney.</string>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
@@ -426,7 +426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JMm-Ux-g7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="537" y="853"/>
+            <point key="canvasLocation" x="536.79999999999995" y="852.70935960591135"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Icw-Mp-mCT">
@@ -436,7 +436,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="RU1-AL-Gql">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="replay" translatesAutoresizingMaskIntoConstraints="NO" id="RU1-AL-Gql">
                                 <rect key="frame" x="34" y="155" width="307" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -496,7 +496,7 @@ Engage in both short-term and long-term game production and research</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="dTX-HZ-u6g">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stairwell" translatesAutoresizingMaskIntoConstraints="NO" id="dTX-HZ-u6g">
                                 <rect key="frame" x="34" y="155" width="307" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -509,9 +509,9 @@ Engage in both short-term and long-term game production and research</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIH-aP-akn">
-                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <rect key="frame" x="34" y="331" width="307" height="267"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <string key="text">Called “one of Philadelphia's most thrilling new designs” by The Philadelphia Inquirer’s architecture critic Inga Saffron, the iconic 3501 Market Street building created by Robert Venturi was transformed into a state-of-the-art center for design and the arts by the noted design firm of Meyer, Scherer &amp; Rockcastle, LTD.</string>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
@@ -542,7 +542,7 @@ Engage in both short-term and long-term game production and research</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PLj-Ru-07K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-916" y="210"/>
+            <point key="canvasLocation" x="-916" y="209.85221674876848"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4lx-fc-bxF">
@@ -552,7 +552,7 @@ Engage in both short-term and long-term game production and research</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="acn-jq-afl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nureva" translatesAutoresizingMaskIntoConstraints="NO" id="acn-jq-afl">
                                 <rect key="frame" x="34" y="155" width="307" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -565,9 +565,9 @@ Engage in both short-term and long-term game production and research</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eky-2g-Gbe">
-                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <rect key="frame" x="34" y="331" width="307" height="353"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <mutableString key="text">The digital canvas retains all of the flexibility that paper-based systems offer (e.g., large workspaces with persistent information) while overcoming many of the challenges (e.g., the awkwardness of physically moving large numbers of sticky notes, sticky notes that fall off the wall, inclusion of remote participants in the process, the need for transcription, and storage and retention of the work). The Span ideation system allows multiple teams to use a collaboration room that previously may have been dedicated to a single team for months.</mutableString>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
@@ -598,7 +598,7 @@ Engage in both short-term and long-term game production and research</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgY-Mz-pNt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-369" y="-477"/>
+            <point key="canvasLocation" x="-370.39999999999998" y="-477.33990147783254"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="r8J-19-i7U">
@@ -608,7 +608,7 @@ Engage in both short-term and long-term game production and research</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hybridLab" translatesAutoresizingMaskIntoConstraints="NO" id="nFd-m9-oMc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dfl" translatesAutoresizingMaskIntoConstraints="NO" id="nFd-m9-oMc">
                                 <rect key="frame" x="34" y="155" width="307" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -621,9 +621,9 @@ Engage in both short-term and long-term game production and research</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="21" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yks-gk-far">
-                                <rect key="frame" x="34" y="331" width="307" height="413"/>
+                                <rect key="frame" x="34" y="331" width="307" height="369"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">The Hybrid Lab is a college wide resource, giving both students and faculty accesses to fabrication equipment and a production space in a multidisciplinary setting. The lab is open to all CoMAD students and faculty. During the academic year the Lab hosts a variety of college wide workshops, and actively promotes interdisciplinary design research and teaching. The Hybrid Making Lab has a variety of micro and small scale tools geared toward model making and small scale prototyping. In addition the Lab has two Universal Laser Cutters. To use the Hybrid Making Lab all students and must attended an orientation session.</string>
+                                <mutableString key="text">​The Design Futures Lab is a trans-disciplinary design research group. The lab pursues speculative design research  with a focus on novel processes, narratives and aesthetics. The discernment of relevant and plausible near-future developments in science and technology are translated into tangible design outcomes. The lab provides a conceptual framework and sets up a series of trans-disciplinary exchanges to nurture and develop  research from a speculative phase to designed prototypes of objects, experiences and environments for the near and far future.</mutableString>
                                 <fontDescription key="fontDescription" name="FranklinGothic-MediumCond" family="Franklin Gothic Medium Cond" pointSize="18"/>
                                 <color key="textColor" name="white"/>
                                 <nil key="highlightedColor"/>
@@ -654,70 +654,35 @@ Engage in both short-term and long-term game production and research</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LGh-Mh-Cfk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868" y="-683"/>
+            <point key="canvasLocation" x="868" y="-683.49753694581284"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Hybrid Making Lab" width="400" height="250"/>
+        <image name="MoCap" width="800" height="530"/>
         <image name="backArrow-3" width="55" height="97"/>
         <image name="button" width="1235" height="240"/>
+        <image name="dfl" width="400" height="250"/>
+        <image name="fhhc" width="799" height="318"/>
         <image name="greenBtn-2" width="1233" height="241"/>
         <image name="home" width="360" height="349"/>
-        <image name="hybridLab" width="901" height="738"/>
         <image name="lblueBtn-2" width="1233" height="241"/>
         <image name="lgreenBtn-2" width="1233" height="241"/>
+        <image name="nureva" width="259" height="194"/>
         <image name="pagination-2" width="436" height="82"/>
         <image name="redBtn-2" width="1233" height="241"/>
+        <image name="replay" width="1003" height="680"/>
+        <image name="stairwell" width="730" height="488"/>
+        <image name="work-statusboard" width="3264" height="2448"/>
         <image name="yellowBtn-2" width="1233" height="241"/>
         <namedColor name="background">
             <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="background">
-            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="background">
-            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="background">
-            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="background">
-            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="background">
-            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="background">
-            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="background">
-            <color red="0.15700000519999999" green="0.15700000519999999" blue="0.15700000519999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="white">
-            <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="white">
-            <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="white">
-            <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="white">
-            <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="white">
-            <color red="0.75300002098083496" green="0.81599998474121094" blue="0.83499997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="white">
-            <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="white">
-            <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="white">
             <color red="0.75300002099999996" green="0.81599998470000001" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CYs-Hp-AXV"/>
+        <segue reference="POM-bf-OfI"/>
     </inferredMetricsTieBreakers>
 </document>
